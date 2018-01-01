@@ -2,7 +2,7 @@ const express = require("express")
 const path=require("path")
 const table=require("./db")
 const app=express()
-const port=process.env.port||1111
+const port=process.env.PORT||1111
 app.use(express.json())
 app.use(express.urlencoded({extended:true}))
 app.use(express.static(path.join(__dirname,"/public")))
