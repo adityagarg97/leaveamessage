@@ -22,4 +22,8 @@ app.post("/",(req,res)=>{
 app.get("/message",(req,res)=>{
     res.send(table)
 })
+app.get("/delete",(req,res)=>{
+    table=[]
+    res.send(table)
+})
 app.listen(port,()=>console.log("Server started at "+port))
