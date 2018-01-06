@@ -22,4 +22,4 @@ app.post("/",(req,res)=>{
 app.get("/message",(req,res)=>{
     res.send(table)
 })
-app.listen(1111,()=>console.log("Server started at "+port))
+app.listen(port,()=>console.log("Server started at "+port))
